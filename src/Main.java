@@ -346,6 +346,7 @@ public class Main {
                     countNotFailLine = 0;
                     for (int i = 0; i < countLine; i++) {
                         s = reader.readLine();
+                        s = s.replaceAll("\\s*", "");
                         if (s.equals(" ") || s.isEmpty()) {
                             failData[countFailLine] = i;
                             countFailLine++;
